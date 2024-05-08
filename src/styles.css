@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    text-decoration: none !important;
+}
+.CartContainer {
+    width: 300px  !important;
+    height: 200px  !important;
+    
+    padding: 5px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); 
+}
+
+
+marquee {
+    margin-top: 3rem;
+    font-family: cursive;
+    font-weight: 400;
+    padding: 1rem;
+    font-style: italic;
+    font-size: 1rem;
+}

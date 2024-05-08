@@ -1,0 +1,118 @@
+<!-- 1  marquee -->
+<div >
+  <marquee  data-aos="fade-right" width="100%">
+    <a href="https://timesofindia.indiatimes.com/india/lok-sabha-election-2024-phase-2-live-updates-pm-narendra-modi-rahul-gandhi-bjp-congress-india-general-elections-2024/liveblog/109602699.cms"
+      target="_blank"  style="color: brown;" >Lok Sabha Election 2024 Phase 2 Live Updates: 'Phase 2 has been too good.. Voters want NDA’s good
+      governance', says PM  Narendra ModiJi </a>
+    <span>
+      <a href="https://timesofindia.indiatimes.com/india/lok-sabha-election-2024-phase-2-live-updates-pm-narendra-modi-rahul-gandhi-bjp-congress-india-general-elections-2024/liveblog/109602699.cms"
+      target="_blank"  href="https://www.indiatoday.in/world"
+      target="_blank"    style="color: rgb(39, 18, 177);">   Students are choosing Canada over US for education.👨‍🎓 Here's why
+      A study by the National Foundation for American Policy (NFAP) shows a significant shift in the destination Indian students are choosing for education. Canada saw an increase of 5,800% in the number of Indian students📝 </a>
+    </span>
+    <span>
+      <a href="http://timesofindia.indiatimes.com/articleshow/109660954.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst"
+      target="_blank"  href="https://www.indiatoday.in/world"
+      target="_blank"    style="color: rgb(28, 85, 4);">   MUMBAI: In response to the passenger demand , Railways introduce summer special unreserved trains between major stations like Dadar-Gorakhpur, LTT Mumbai-Gorakhpur, CSMT Mumbai-Danapur, with stops at various cities. Passengers can book via UTS system with regular charges..
+    </a>
+    </span>
+    <span>
+      <a href="https://timesofindia.indiatimes.com/topic/neet-exam-2024-maharashtra"
+      target="_blank"  href="https://www.indiatoday.in/world"
+      target="_blank"    style="color: rgb(28, 85, 4);">  NEET UG 2024 City 
+      The NEET UG 2024 City Intimation Slip has been released on the official website exams.nta.ac.in. This slip contains crucial details such as examination date, time, centre address, and candidate information. 
+    </a>
+    </span>
+    </marquee>
+</div>
+  
+  
+  <!-- 2 -->
+  <!-- <div data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="banner-content bg-warning">
+      <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+        class=" badge badge-danger fs-12 font-weight-bold mb-3 p-1">
+        Global news
+      </div>
+      <h1  class="mb-2 p-2" >282 million people suffered due to famine, Gaza worst hit: UN report</h1>
+      <p  data-aos="fade-zoom-in" class="mb-4 px-2"   >
+        Nearly 282 million people in 59 countries suffer from acute hunger, with war-torn Gaza as the territory with the
+        largest number of people facing famine, according to the Global Report on Food Crises released Wednesday.
+  
+      </p>
+      <div class="fs-12 mb-2 px-2">
+        <a href="https://apnews.com/article/united-nations-acute-global-hunger-gaza-sudan-4cf3f8730a755c5324d667cb72d1c503#:~:text=UNITED%20NATIONS%20(AP)%20%E2%80%94%20Nearly,on%20Food%20Crises%20released%20Wednesday."
+          target="_blank"> <span class="mr-2 mb-4 text-white">Updated 10 Minutes ago</span> </a>
+        <br>
+        <a href="https://apnews.com/article/united-nations-acute-global-hunger-gaza-sudan-4cf3f8730a755c5324d667cb72d1c503#:~:text=UNITED%20NATIONS%20(AP)%20%E2%80%94%20Nearly,on%20Food%20Crises%20released%20Wednesday."
+          target="_blank"> <button type="button "  class="btn btn-dark btn-sm  mt-2 mb-">Read more</button> </a>
+      </div>
+      <br>
+  
+    </div>
+  </div> -->
+  
+  
+  
+  
+<!--  3 CARDS- -->
+  <div class="container">
+  <br>
+    <div>
+      <h3 class="">Latest Science News📰</h3>
+     </div>
+    
+    <div class="cardContainer">
+      <div class="row" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-lg-3 col-md-6" *ngFor="let i of scienceNewsData">
+  
+          <section class="mx-auto my-5" style="max-width: 23rem;">
+  
+            <div class="card p-2" data-aos="fade-up" data-aos-duration="3000">
+  
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <a href="{{i.url}}" target="_blank">
+                  <img [src]="i.urlToImage "  class="img-fluid"
+                    style="height: 200px;" /></a>
+                <!--  <img 
+             [src] ="i.urlToImage || 'defaultImgUrl' "
+               class="img-fluid"  onerror="this.src='defaultImgUrl'" /> -->
+  
+              </div>
+  
+              <div class="card-body">
+                <!-- <p class="card-title font-weight-bold"><a> Author: {{i.author}}</a> 
+                <span  class="">{{i.publishedAt | date:'yyyy-MM-dd' }}  </span>
+            </p> -->
+  
+                <div class="row mb-3">
+                  <div class="col-6">
+                    <h6 class="text-info">
+                      <i class="fas fa-plane"></i>
+                      Author: {{i.author ? i.author:'Rajat Sharma'}}
+                    </h6>
+                  </div>
+  
+                  <div class="col-6 text-end">
+                    <u> {{ todayDate | date:'yyyy-MM-dd' }}</u>
+                  </div>
+                </div>
+  
+                <strong>
+                  <li class="list-inline-item">
+                    <p class="text-warning">Source: {{i.source.name}}</p>
+                  </li>
+                </strong>
+  
+                <h6 class="mb-2">• {{i.title}}</h6>
+                <!-- <p class="card-text">{{i.description}} </p> -->
+                <a href="{{i.url}}" target="_blank"> <button  data-aos="fade-zoom-in"
+                   class="btn btn-dark btn-sm  p-1 md-1 mb-0  ">Read More
+                  </button> </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>

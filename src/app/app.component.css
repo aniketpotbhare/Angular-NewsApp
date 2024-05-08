@@ -1,0 +1,120 @@
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h3 a{
+    color: brown;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar.navbar-light .navbar-nav .nav-link  {
+    font-size: 17px;
+    color: #fcfcfc; 
+    font-weight: 500;
+    font-family: Georgia, ;
+    padding: 1rem;
+    margin: 0.33rem;
+    
+}
+/* .navbar.navbar-light .navbar-nav .nav-link:hover {
+    color: #f2c512;
+    font-weight: 700;
+}
+.navbar-nav  .nav-item .nav-link:active{
+    color: #f2c512;
+    font-weight: 700;
+} */
+
+.navbar.navbar-light .navbar-nav .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: #f2c512;
+    font-weight: 700;
+}
+.navbar-brand img{
+    height: 50px;
+    width: 50px;
+}
+.navbar-brand span{
+    font-weight: 800;
+    line-height: 2;
+    color: #ec3832;
+    font-size: 1.5rem;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+}
+form .form-control{
+    /* background-color: #f2c512; */
+    width: 155px;
+    border:2px solid #f2c512;
+    border-radius: 40px;
+    position: relative;
+
+}
+ form button {
+    /* background-color: #ec3832; */
+    /* width: 15px; */
+    /* float: right; */
+    align-items: flex-end;
+    /* border-radius: 40px; */
+    position: absolute;
+    padding:.40rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fa .fa-search{
+font-size:48px;
+/* color:rgb(255, 255, 255);
+background-color: #fcfcfc; */
+}
+
+/* .container-fluid .container-fluid .footer{
+    
+    padding: 2rem;
+    margin: 0.33rem;
+} */
+
+
+footer li a{
+    color: #f2c512;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer li a:hover{
+    color: #ffffff;
+    font-weight: 700;
+}
+footer h6{
+    color:#ffffff;
+    padding-bottom: 1rem;
+}
+footer h6:hover{
+    color: #f2c512;
+}
+
+body {
+    text-decoration: none;
+    /* position: relative; */
+    /* min-height: 100%; */
+  }
+ 
+  .footer {
+      /* box-sizing: border-box;  */
+     
+    position: absolute;
+    /* bottom:0; */
+   margin: 0 !important;
+   
+ min-width:100%;
+ /* min-height: 20% !important; */
+    
+   
+    line-height: 110px; 
+  }
+  

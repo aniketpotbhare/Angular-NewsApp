@@ -1,0 +1,7 @@
+.CartContainer {
+    display: inline-block;
+    width: 300px  !important;
+    height: 200px  !important;
+    
+    padding: 5px;
+}

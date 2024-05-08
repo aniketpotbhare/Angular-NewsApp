@@ -1,0 +1,85 @@
+<!-- NGX LOADING -->
+<!-- <ngx-loading-bar [includeSpinner]="false" [height]="'5px'" [color]="' #f2c512'"></ngx-loading-bar> -->
+
+
+<!-- search bar -->
+<div class="col-md-4 offset-md-4 mt-5 pt-5">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" (input)="showSearchNews($event)" placeholder="Search News... " aria-label="Search" >
+    <div class="input-group-append">
+      <span class=" btn btn-input-group-text bg-warning disabled"  type="submit" (input)="showSearchNews($event)"><i class="fa fa-search"></i></span>
+      <!-- <span class=" btn btn-input-group-text bg"  type="submit" ((click))="showSearchNews($event)"><i class="fa fa-search"></i></span> -->
+    </div>
+  </div>
+</div>
+
+<!-- body -->
+
+<!-- <div *ngIf="searchdata">
+    <div *ngFor="let s of searchdata">
+      <h3>{{ s?.title }}</h3>
+      <p>{{ s?.description }}</p>
+      <p>Source: {{ s?.source?.name }}</p>
+    
+    </div>
+  </div>
+   -->
+
+
+
+
+
+<!--  MAIN SEARCH daata- -->
+
+<div class="container" *ngIf="searchdata">
+  <br>
+  <div>
+    <h3 class=""> Search Result📰 </h3>
+  </div>
+
+
+  <div class="cardContainer" *ngIf="searchdata">
+    <div class="row" *ngIf="searchdata" data-aos="fade-up" data-aos-duration="3000">
+      <div class="col-lg-3 col-md-6" *ngFor="let i of searchdata">
+
+        <section class="mx-auto my-5" style="max-width: 23rem;">
+
+          <div class="card p-2" data-aos="fade-up" data-aos-duration="3000">
+
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <a href="{{i.url}}" target="_blank">
+                <img [src]="i.urlToImage " class="img-fluid" style="height: 200px;" /></a>
+            </div>
+
+            <div class="card-body">
+              <p class="card-title font-weight-bold"><a> Author: {{i.author}}</a> 
+                <!-- <span  class="">{{i.publishedAt | date:'yyyy-MM-dd' }}  </span> -->
+            </p>
+
+              <div class="row mb-3">
+                <div class="col-6">
+                  <h6 class="text-info">
+                    <i class="fas fa-plane"></i>
+                    Author: {{i.author ? i.author:'Rajat Sharma'}}
+                  </h6>
+                </div>
+              </div>
+
+              <strong>
+                <li class="list-inline-item">
+                  <p class="text-warning">Source: {{i.source.name}}</p>
+                </li>
+              </strong>
+
+              <h6 class="mb-2">• {{i.title}}</h6>
+              <!-- <p class="card-text">{{i.description}} </p> -->
+              <a href="{{i.url}}" target="_blank"> <button data-aos="fade-zoom-in"
+                  class="btn btn-dark btn-sm  p-1 md-1 mb-0  ">Read More
+                </button> </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
